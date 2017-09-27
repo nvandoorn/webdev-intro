@@ -1,9 +1,12 @@
-// the + at the start of the assignment
-// converts the strings to numbers
-// such that 5 + 5 = 10 instead of 55
-// (parseFloat or parseInt would work too)
-var number1 = +window.prompt('First Number')
-var number2 = +window.prompt('Second Number')
-var number3 = +window.prompt('Third Number')
+var inputBox = document.getElementById('input-box')
+var btn = document.getElementById('submit-input-box')
+var showValue = document.getElementById('show-value')
 
-alert(number1 + number2 + number3)
+btn.addEventListener('click', function () {
+  // type string
+  var text = inputBox.value
+  // list of strings
+  var tokens = text.split(',')
+  // joined back into one string
+  showValue.innerText = tokens.join('    ')
+})
