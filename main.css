@@ -1,0 +1,11 @@
+.flexbox {
+  display: flex;
+}
+
+.red-text {
+  color: red;
+}
+
+.big-text {
+  font-size: 40px;
+}
