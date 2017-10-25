@@ -1,12 +1,17 @@
-var inputBox = document.getElementById('input-box')
-var btn = document.getElementById('submit-input-box')
-var showValue = document.getElementById('show-value')
+var header = document.getElementById('click-me')
+var lowerContainer = document.getElementById('lower-container')
+var isOpen = false
+var className = 'chatbox_lower-container__open'
 
-btn.addEventListener('click', function () {
-  // type string
-  var text = inputBox.value
-  // list of strings
-  var tokens = text.split(',')
-  // joined back into one string
-  showValue.innerText = tokens.join('    ')
+header.addEventListener('click', function () {
+  // closed going to open
+  if (!isOpen) {
+    isOpen = true
+    lowerContainer.classList.add(className)
+  }
+  // open going to close
+  else {
+    isOpen = false
+    lowerContainer.classList.remove(className)
+  }
 })

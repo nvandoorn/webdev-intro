@@ -2,13 +2,33 @@
   <head>
     <title>Our Title</title>
     <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <p id="show-value"></p>
-    <form>
-      <input type="text" name="input-box" id="input-box">
-    </form>
-    <button id="submit-input-box">Click me</button>
+    <div class="chatbox-container">
+      <div class="chatbox_header" id="click-me">
+        <div class="chatbox_header_label">
+          Bark With an Expert
+        </div>
+        <div class="chatbox_header_arrow">
+          <i class="fa fa-chevron-up" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="chatbox_lower-container" id="lower-container">
+        <div class="chatbox_convo-area">
+          <div class="chatbox_convo_bubble chatbox_convo_bubble__other">
+            Hey you're sniffin around in the tall grass, need a hand?
+          </div>
+          <div class="chatbox_convo_bubble chatbox_convo_bubble__you">
+            Howdy detective dog, I would love a hand!
+          </div>
+        </div>
+        <div class="chatbox_dialog">
+          <input class="chatbox_input" type="text" name="chat">
+          <button class="chatbox_send-btn">Send</button>
+        </div>
+      </div>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
