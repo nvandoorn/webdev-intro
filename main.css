@@ -8,7 +8,7 @@
 
 .chatbox_lower-container {
   height: 0;
-  transition: 500ms linear;
+  transition: 1500ms cubic-bezier(0,1.56,.86,-0.7);
 }
 
 .chatbox_lower-container__open {
